@@ -14,26 +14,88 @@
   <body>
     <header>
       <nav class="nav">
+        <button type="button" class="hamburger" id="menuBtn">
+          <i class="fa fa-bars"></i>
+        </button>
         <div class="logo"><a href="#">logo</a></div>
-        <div class="hamburger"><i class="fa fa-solid fa-bars"></i></div>
-        <ul class="nav-list">
-          <li id="home">Home</li>
-          <li><a href="about.html">About</a></li>
-          <li>Join</li>
-          <li>Sponsor</li>
-          <li id="news">News</li>
-          <li><div class="campaign">CC Campaign</div></li>
-        </ul>
+        <div id="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-items" id="home">Home</li>
+            <li class="nav-items" id="about"><a href="about.html">About</a></li>
+            <li class="nav-items" id="join">Join</li>
+            <li class="nav-items" id="sponsor">Sponsor</li>
+            <li class="nav-items" id="news">News</li>
+            <li><div class="campaign">CC Campaign</div></li>
+            <button class="close" id="close">&times;</button>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
       <section class="main-page">
         <div class="welcome">
           <h2 class="greet">"Hello !! Sharing World."</h2>
-          <h1 class="info">Creative Commons global summit 2023.</h1>
+          <h1 class="intro">Creative Commons global summit 2023.</h1>
+        </div>
+        <div class="info">
+          A joyful celebration believing in openness and sharing, creating a
+          positive change with people form over 80 countries is taking place in
+          March in India
+        </div>
+        <div class="time-place">
+          <div class="time">2023.3.15(Thu) ~ 16(Fri)</div>
+          <div class="place">@Sula ,Nashik,Maharashtra</div>
         </div>
       </section>
-      <section class="programs">program</section>
+      <section class="programs">
+        <p class="title-program">Main Programs</p>
+        <div class="separator"></div>
+        <div class="program">
+          <ul class="program-list">
+            <li class="program">
+              <img src="#" />
+              <p class="program-name">Lecture</p>
+              <div class="program-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis impedit excepturi molestiae ratione vel accusamus!
+              </div>
+            </li>
+            <li class="program">
+              <img src="#" />
+              <p class="program-name">Lecture</p>
+              <div class="program-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis impedit excepturi molestiae ratione vel accusamus!
+              </div>
+            </li>
+            <li class="program">
+              <img src="#" />
+              <p class="program-name">Lecture</p>
+              <div class="program-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis impedit excepturi molestiae ratione vel accusamus!
+              </div>
+            </li>
+            <li class="program">
+              <img class="program-img" src="#" />
+              <p class="program-name">Lecture</p>
+              <div class="program-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis impedit excepturi molestiae ratione vel accusamus!
+              </div>
+            </li>
+            <li class="program">
+              <img src="#" />
+              <p class="program-name">Lecture</p>
+              <div class="program-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis impedit excepturi molestiae ratione vel accusamus!
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="join-summit">Join CC Global Summit 2023</button>
+      </section>
       <section class="speakers">speaker</section>
     </main>
     <footer class="footer"></footer>

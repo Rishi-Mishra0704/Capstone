@@ -1,66 +1,173 @@
-*{
-    list-style-type: none;
-    overflow-x: hidden;
-    text-decoration: none;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  list-style-type: none;
+  overflow-x: hidden;
+  text-decoration: none;
+  margin: 0;
+  font-family: "Lato";
 }
 
 /*------------------------ Nav bar --------------------------*/
-nav{
-    position: absolute;
-    margin-bottom: 10%;
-    height: auto;
-    width: 100%;
- 
+.nav {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-bar {
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+.close {
+  padding-left: -50%;
+  display: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 30px;
+  height: 10%;
+  width: 10%;
+  color: orangered;
+  float: right;
 }
 
-.logo{
-    display: none;
+.hamburger {
+  display: block;
+  height: 10%;
+  width: 10%;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
-.nav-list{
-    display: none;
-    padding: 10px 0;
+.logo {
+  display: none;
 }
-#news{
-    margin-bottom: 10px;
-}
-.campaign{
-    padding: 10px 3px;
-    display: flex;
-    flex-direction: row;
-    width: 20%;
-    border: 3px solid orangered;
-    color: orangered;
-    background: transparent;
-    font-size: 14px;
+.nav-list {
+  display: none;
+  padding: 10px 10%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  background-color: #fff;
 }
 
+.campaign {
+  margin: 0;
+  padding: 10px 3px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid orangered;
+  color: orangered;
+  background: transparent;
+  font-size: 14px;
+  width: 20%;
+}
+.nav-items:active,
+.nav-items:hover {
+  color: orangered;
+  transform: scale(110%);
+  transition: all 0.5s ease-in-out;
+}
 /*------------------------ Main-page -------------------------*/
-.main-page{
-    background-image: url("assets/home-bg.png");
-    background-size: cover;
-    background-position:top center;
-    height: 100vh;
-    width: 100%;
+.main-page {
+  margin: 0;
+  background-image: url("assets/home-bg.png");
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 100%;
 }
-.welcome{
-    margin-top: 10%;
+.welcome {
+  margin-right: 4%;
+  padding-top: 15%;
+  font-weight: bold;
 }
-.greet{
-    margin: 0;
-    font-size: 50px;
-    color: orangered;
-    padding-left: 5%;
+.greet {
+  margin: 0;
+  font-size: 50px;
+  color: orangered;
+  padding-left: 5%;
 }
-h1{
-    margin: 0;
-    padding-left: 5%;
-    color: transparent;
-    background-image: url("assets/header\ background.jpeg");
-    background-size: 100% 100%;
-    background-clip: text;
-   -webkit-background-clip: text;
-   -moz-background-clip: text;
-   -o-background-clip: text;
-   font-size: 48px;
+h1 {
+  margin: 0;
+  padding-left: 5%;
+  color: transparent;
+  background-image: url("assets/header\ background.jpeg");
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  font-size: 46px;
+}
+.info {
+  height: 10%;
+  width: 90%;
+  margin: 10px 0 0 3%;
+  border: 7px solid #fff;
+  font-size: 16px;
+  color: grey;
+  background-color: #f0f0f0;
+}
+.time-place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  color: grey;
+}
+.time {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: rgb(91, 90, 90);
+}
+.place {
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: -6%;
+}
+/*---------------------------- Programs -------------------------------*/
+
+.programs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  background-color: #344453;
+  background-image: url("assets/diamond.png");
+  background-repeat: repeat;
+
+}
+.program-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.program-name{
+  color: orangered;
+}
+.program{
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  margin:2% 5%;
+  font-size: 18px;
+}
+.join-summit{
+  border: none;
+  outline: none;
+  height: 10%;
+  width: 50%;
+  margin: 10%;
+  background-color:#ec5242;
+  color: #fff;
+  font-size: 16px;
 }
