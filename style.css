@@ -156,8 +156,9 @@ h1 {
   justify-content: space-between;
   height: 100vh;
   width: 100%;
-  background-color: #344453;
+  background-color: #202a32;
   background-image: url("assets/diamond.png");
+  background-size: 6% 6%;
   background-repeat: repeat;
 }
 .program-list {
@@ -185,8 +186,9 @@ h1 {
 .program-img{
   margin-top: 1.5%;
   margin-right: 5%;
-  height: 60%;
-  width: 60%;
+  margin-left: 1.5%;
+  height: 50%;
+  width: 50%;
 }
 #name-lecture{
   text-align: center;
@@ -202,4 +204,73 @@ h1 {
   background-color: #ec5242;
   color: #fff;
   font-size: 16px;
+}
+/* ----------------------------------------Featured speakers -----------------------*/
+.speakers {
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hr2{
+  width: 12%;
+  border: 1px solid #ec5242;
+}
+.speaker-txt{
+  margin-bottom: 5%;
+}
+.featured-speakers {
+  width: 100%;
+  height: 30%;
+}
+.featured-speaker hr{
+  width: 10%;
+  margin: 10px 0;
+}
+.featured-speaker {
+  padding: 0 16px;
+  margin: 32px 0;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.featured-speaker-profile-container {
+  height: auto;
+  width: auto;
+  background-image: url("./assets/image-bg.png");
+  background-size: 50%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding: 5% 0 0 5%;
+}
+
+.featured-speaker-profile-container img {
+  width: 90%;
+  height: 90%;
+}
+
+.featured-speaker__name {
+  font-weight: 800;
+  font-size: large;
+}
+
+.featured-speaker__title {
+  font-style: italic;
+  color: #ec5242;
+}
+.more{
+  outline: none;
+  border: 1px solid #656565;
+  font-size: 18px;
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+}
+.more i{
+  margin: 0 10px;
 }
