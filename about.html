@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,23 +15,46 @@
     <header>
       <nav class="nav">
         <div class="logo"><a href="#">logo</a></div>
-        <ul class="nav-list">
-          <li id="home"><a href="index.html">Home</a></li>
-          <li>About</li>
-          <li>Join</li>
-          <li>Sponsor</li>
-          <li>News</li>
-          <li><div class="campaign">CC Campaign</div></li>
-        </ul>    
+        <div id="nav-bar">
+          <ul class="nav-list" id="nav-list">
+            <button class="close" id="close">&times;</button>
+            <li class="nav-items" id="home"><a href="index.html">Home</a></li>
+            <li class="nav-items" id="about"><a href="#">About</a></li>
+            <li class="nav-items" id="join">Join</li>
+            <li class="nav-items" id="sponsor">Sponsor</li>
+            <li class="nav-items" id="news">News</li>
+            <li><div class="campaign">CC Campaign</div></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
-      <section class="main-page">main</section>
-      <section class="programs">program</section>
+      <section class="main-page">
+        <button type="button" class="hamburger" id="menuBtn">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="welcome">
+          <h2 class="greet">"Hello !! Sharing World."</h2>
+          <h1 class="intro">Creative Commons global summit 2023.</h1>
+        </div>
+        <div class="main-info">
+          The Global Summit brings together the community of experts, academics,
+          and activists who comprise the Creative Commons affiliate network in a
+          different country every two. This year, we hope to expand our
+          invitation list including organizations and individuals
+        </div>
+        <div class="contact-section">
+          <div class="contact-text">
+            Please contact us per Email for any further questions about CC
+            Global Summit 2023! 
+          </div>
+          <div class="email">ccsummit2023@xyz.org</div>
+        </div>
+      </section>
+      <section class="logo">program</section>
       <section class="speakers">speaker</section>
     </main>
-    <footer class="footer">
-    </footer>
+    <footer class="footer"></footer>
     <script src="about.js"></script>
   </body>
 </html>

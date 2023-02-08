@@ -4,7 +4,7 @@
   overflow-x: hidden;
   text-decoration: none;
   margin: 0;
-  font-family: "Lato";
+  font-family: "Lato",sans-serif;
 }
 
 /*------------------------ Nav bar --------------------------*/
@@ -16,12 +16,12 @@
   justify-content: space-between;
 }
 #nav-bar {
+  height: 100%;
   width: 100%;
   display: none;
   position: absolute;
 }
 .close {
-  padding-left: -50%;
   display: none;
   border: none;
   outline: none;
@@ -31,6 +31,7 @@
   width: 10%;
   color: orangered;
   float: right;
+  margin-left: 95%;
 }
 
 .hamburger {
@@ -40,6 +41,9 @@
   outline: none;
   border: none;
   cursor: pointer;
+  background: transparent;
+  color: #656565;
+  font-size: 26px;
 }
 .logo {
   display: none;
@@ -53,6 +57,7 @@
   flex-direction: column;
   font-size: 30px;
   background-color: #fff;
+
 }
 
 .campaign {
@@ -64,13 +69,14 @@
   color: orangered;
   background: transparent;
   font-size: 14px;
-  width: 20%;
+  width: 25%;
+  
 }
 .nav-items:active,
 .nav-items:hover {
   color: orangered;
   transform: scale(110%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s linear;
 }
 /*------------------------ Main-page -------------------------*/
 .main-page {
@@ -83,7 +89,7 @@
 }
 .welcome {
   margin-right: 4%;
-  padding-top: 15%;
+  padding-top: 10%;
   font-weight: bold;
 }
 .greet {
@@ -132,8 +138,18 @@ h1 {
   margin-left: -6%;
 }
 /*---------------------------- Programs -------------------------------*/
-
-.programs{
+.title-program{
+  font-size: 20px;
+  margin: 3%;
+  font-weight: 500;
+  color: #fff;
+}
+.hr1{
+  width: 12%;
+  border: 2px solid #ec5242;
+}
+.programs {
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,31 +159,47 @@ h1 {
   background-color: #344453;
   background-image: url("assets/diamond.png");
   background-repeat: repeat;
-
 }
-.program-list{
+.program-list {
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-.program-name{
+.program-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: orangered;
+  width: 100%;
 }
-.program{
+.program {
   display: flex;
   color: white;
-  justify-content: space-evenly;
-  margin:2% 5%;
-  font-size: 18px;
+  margin: 1% 3%;
+  font-size: 16px;
+  background: rgba(128, 127, 127, 0.3);
+  backdrop-filter: 0.7;
 }
-.join-summit{
+.program-img{
+  margin-top: 1.5%;
+  margin-right: 5%;
+  height: 60%;
+  width: 60%;
+}
+#name-lecture{
+  text-align: center;
+  margin-left: 1.3%;
+  padding-left: 2.5%;
+}
+.join-summit {
   border: none;
   outline: none;
   height: 10%;
   width: 50%;
-  margin: 10%;
-  background-color:#ec5242;
+  margin: 5%;
+  background-color: #ec5242;
   color: #fff;
   font-size: 16px;
 }

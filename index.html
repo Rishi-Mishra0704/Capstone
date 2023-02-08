@@ -14,25 +14,25 @@
   <body>
     <header>
       <nav class="nav">
-        <button type="button" class="hamburger" id="menuBtn">
-          <i class="fa fa-bars"></i>
-        </button>
         <div class="logo"><a href="#">logo</a></div>
         <div id="nav-bar">
-          <ul class="nav-list">
+          <ul class="nav-list" id="nav-list">
+            <button class="close" id="close">&times;</button>
             <li class="nav-items" id="home">Home</li>
             <li class="nav-items" id="about"><a href="about.html">About</a></li>
             <li class="nav-items" id="join">Join</li>
             <li class="nav-items" id="sponsor">Sponsor</li>
             <li class="nav-items" id="news">News</li>
             <li><div class="campaign">CC Campaign</div></li>
-            <button class="close" id="close">&times;</button>
           </ul>
         </div>
       </nav>
     </header>
     <main class="container">
       <section class="main-page">
+        <button type="button" class="hamburger" id="menuBtn">
+          <i class="fa fa-bars"></i>
+        </button>
         <div class="welcome">
           <h2 class="greet">"Hello !! Sharing World."</h2>
           <h1 class="intro">Creative Commons global summit 2023.</h1>
@@ -49,54 +49,56 @@
       </section>
       <section class="programs">
         <p class="title-program">Main Programs</p>
-        <div class="separator"></div>
-        <div class="program">
+        <hr class="hr1" />
+        <div class="program-container">
           <ul class="program-list">
             <li class="program">
-              <img src="#" />
-              <p class="program-name">Lecture</p>
+              <img class="program-img" src="assets/lecture-icon.png" />
+              <p class="program-name" id="name-lecture">Lecture</p>
               <div class="program-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis impedit excepturi molestiae ratione vel accusamus!
+                Listen to the speakers from various other countries about the
+                message about sharing and openness.
               </div>
             </li>
             <li class="program">
-              <img src="#" />
-              <p class="program-name">Lecture</p>
+              <img class="program-img" src="assets/exhibition-icon.png" />
+              <p class="program-name" id="name-lecture">CC<br />Exhibition</p>
               <div class="program-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis impedit excepturi molestiae ratione vel accusamus!
+                Appreciate various creations applying CC license of artists,
+                organized from Art Center Nabi.
               </div>
             </li>
             <li class="program">
-              <img src="#" />
-              <p class="program-name">Lecture</p>
+              <img class="program-img" src="assets/forum-icon.png" />
+              <p class="program-name">Forum</p>
               <div class="program-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis impedit excepturi molestiae ratione vel accusamus!
+                Have the time to share your thoughts and opinions with experts
+                for each topic.
               </div>
             </li>
             <li class="program">
-              <img class="program-img" src="#" />
-              <p class="program-name">Lecture</p>
+              <img class="program-img" src="assets/workshop-icon.png" />
+              <p class="program-name">Workshop</p>
               <div class="program-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis impedit excepturi molestiae ratione vel accusamus!
+                Try creating your own work using open source license rather than
+                just watching
               </div>
             </li>
             <li class="program">
-              <img src="#" />
-              <p class="program-name">Lecture</p>
+              <img class="program-img" src="assets/ignite-icon.png" />
+              <p class="program-name">CC Ignite</p>
               <div class="program-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis impedit excepturi molestiae ratione vel accusamus!
+                Get opportunities to network with CC affiliates around the
+                world, also after the summit.
               </div>
             </li>
           </ul>
         </div>
-        <button type="button" class="join-summit">Join CC Global Summit 2023</button>
+        <button type="button" class="join-summit">
+          Join CC Global Summit 2023
+        </button>
       </section>
-      <section class="speakers">speaker</section>
+      <section class="speakers" id="speakers">speaker</section>
     </main>
     <footer class="footer"></footer>
     <script src="index.js"></script>

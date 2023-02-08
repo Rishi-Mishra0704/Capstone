@@ -1,0 +1,106 @@
+/*----------------------------- Nav Bar -------------------------------------*/
+.nav {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-bar {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+.close {
+  display: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 30px;
+  height: 10%;
+  width: 10%;
+  color: orangered;
+  float: right;
+  margin-left: 95%;
+}
+
+.hamburger {
+  display: block;
+  height: 10%;
+  width: 10%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: #656565;
+  font-size: 26px;
+}
+.logo {
+  display: none;
+}
+.nav-list {
+  display: none;
+  padding: 10px 10%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  background-color: #fff;
+}
+
+.campaign {
+  margin: 0;
+  padding: 10px 3px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid orangered;
+  color: orangered;
+  background: transparent;
+  font-size: 14px;
+  width: 25%;
+}
+.nav-items:active,
+.nav-items:hover {
+  color: orangered;
+  transform: scale(110%);
+  transition: all 0.5s linear;
+}
+/*--------------------------------------Main page ----------------------------*/
+.main-page {
+  margin: 0;
+  background-image: url("assets/home-bg.png");
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 100%;
+}
+.welcome {
+  padding: 0;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.greet {
+  margin: 0;
+  font-size: 30px;
+  color: #ec5242;
+  font-weight: lighter;
+}
+h1 {
+    text-align: center;
+  font-size: 44px;
+  margin: 0;
+  color: #ec5242;
+  background: none;
+}
+.main-info{
+    margin-top: 10%;
+    border: 2px solid #adadad;
+    background: #fff;
+    text-align: center;
+}
+/*LOGO and description*/
