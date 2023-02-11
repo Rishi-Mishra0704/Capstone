@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 * {
   list-style-type: none;
   overflow-x: hidden;
@@ -6,22 +7,26 @@
   margin: 0;
   font-family: "Lato", sans-serif;
 }
+
 a:-webkit-any-link {
   color: white;
   cursor: pointer;
   text-decoration: none;
 }
 
-/*------------------------ Nav bar --------------------------*/
+/* ------------------------ Nav bar -------------------------- */
 a {
   color: #fff;
 }
+
 .header-list {
   display: none;
 }
+
 #about a {
   color: black;
 }
+
 .nav {
   text-decoration: none;
   height: 100%;
@@ -29,6 +34,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 #nav-bar {
   text-decoration: none;
   height: 100%;
@@ -36,6 +42,7 @@ a {
   display: none;
   position: absolute;
 }
+
 .close {
   display: none;
   border: none;
@@ -60,9 +67,11 @@ a {
   color: #656565;
   font-size: 26px;
 }
+
 .logo {
   display: none;
 }
+
 .nav-list {
   display: none;
   padding: 10px 10%;
@@ -86,13 +95,15 @@ a {
   font-size: 14px;
   width: 30%;
 }
+
 .nav-items:active,
 .nav-items:hover {
   color: orangered;
   transition: all 0.4ms linear;
   cursor: pointer;
 }
-/*------------------------ Main-page -------------------------*/
+
+/* ------------------------ Main-page ------------------------- */
 .main-page {
   margin: 0;
   background-image: url("assets/home-bg.png");
@@ -101,17 +112,20 @@ a {
   height: 100vh;
   width: 100%;
 }
+
 .welcome {
   margin-right: 4%;
   padding-top: 10%;
   font-weight: bold;
 }
+
 .greet {
   margin: 0;
   font-size: 38px;
   color: orangered;
   padding-left: 5%;
 }
+
 h1 {
   margin: 0;
   padding-left: 5%;
@@ -122,6 +136,7 @@ h1 {
   -webkit-background-clip: text;
   font-size: 42px;
 }
+
 .info {
   height: 10%;
   width: 90%;
@@ -131,6 +146,7 @@ h1 {
   color: grey;
   background-color: #f0f0f0;
 }
+
 .time-place {
   display: flex;
   flex-direction: column;
@@ -138,28 +154,33 @@ h1 {
   margin: 5%;
   color: grey;
 }
+
 .time {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 3px;
   color: rgb(91, 90, 90);
 }
+
 .place {
   font-size: 28px;
   font-weight: 600;
   margin-left: -6%;
 }
-/*---------------------------- Programs -------------------------------*/
+
+/* ---------------------------- Programs ------------------------------- */
 .title-program {
   font-size: 20px;
   margin: 3%;
   font-weight: 500;
   color: #fff;
 }
+
 .hr1 {
   width: 12%;
   border: 2px solid #ec5242;
 }
+
 .programs {
   padding: 0;
   display: flex;
@@ -173,6 +194,7 @@ h1 {
   background-size: 6% 6%;
   background-repeat: repeat;
 }
+
 .program-list {
   padding: 0;
   display: flex;
@@ -180,6 +202,7 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
 }
+
 .program-name {
   display: flex;
   justify-content: center;
@@ -187,6 +210,7 @@ h1 {
   color: orangered;
   width: 100%;
 }
+
 .program {
   display: flex;
   color: white;
@@ -195,6 +219,7 @@ h1 {
   background: rgba(128, 127, 127, 0.3);
   backdrop-filter: 0.7;
 }
+
 .program-img {
   margin-top: 1.5%;
   margin-right: 5%;
@@ -202,11 +227,13 @@ h1 {
   height: 50%;
   width: 50%;
 }
+
 #name-lecture {
   text-align: center;
   margin-left: 1.3%;
   padding-left: 2.5%;
 }
+
 .join-summit {
   border: none;
   outline: none;
@@ -217,7 +244,8 @@ h1 {
   color: #fff;
   font-size: 16px;
 }
-/* ----------------------------------------Featured speakers -----------------------*/
+
+/* ----------------------------------------Featured speakers ----------------------- */
 .speakers {
   padding: 3em 1em;
   display: flex;
@@ -225,13 +253,16 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
 .hr2 {
   width: 12%;
   border: 1px solid #ec5242;
 }
+
 .speaker-txt {
   margin-bottom: 5%;
 }
+
 .featured-speakers {
   width: 100%;
   height: 30%;
@@ -241,6 +272,7 @@ h1 {
   width: 10%;
   margin: 10px 0;
 }
+
 .featured-speaker {
   padding: 0 16px;
   margin: 32px 0;
@@ -275,6 +307,7 @@ h1 {
   font-style: italic;
   color: #ec5242;
 }
+
 .more {
   outline: none;
   border: 1px solid #656565;
@@ -284,10 +317,12 @@ h1 {
   text-align: center;
   background: transparent;
 }
+
 .more i {
   margin: 0 10px;
   color: #ec5242;
 }
+
 .less {
   display: none;
   outline: none;
@@ -298,25 +333,31 @@ h1 {
   text-align: center;
   background: transparent;
 }
+
 .less i {
   margin: 0 10px;
   color: #ec5242;
 }
+
 .hidden {
   display: none;
 }
+
 .active {
   display: flex;
 }
+
 .sponsors {
   display: none;
 }
+
 footer {
   display: none;
 }
-/*------------------------------------ Desktop Styling-------------------------*/
+
+/* ------------------------------------ Desktop Styling------------------------- */
 @media only screen and (min-width: 768px) {
-  /*----------------------------------Nav bar-------------------------------*/
+  /* ----------------------------------Nav bar------------------------------- */
   .header-list {
     display: flex;
     justify-content: right;
@@ -325,50 +366,62 @@ footer {
     padding-right: 10%;
     height: 50px;
   }
+
   .logo {
     display: block;
     color: #202a32;
   }
+
   .logo a {
     color: #202a32;
   }
+
   .logo img {
     margin-left: 30px;
     width: 45%;
   }
+
   .header-list li {
     text-decoration: none;
     margin: 0 10px;
     color: #fff;
   }
+
   .hamburger {
     display: none;
   }
+
   .close {
     display: none;
   }
+
   .nav {
     width: 100%;
   }
+
   #nav-bar {
     width: 100%;
     display: flex;
     position: relative;
     flex-direction: row;
   }
+
   #nav-bar ul {
     width: 100%;
   }
+
   .nav-list {
     margin: 0% 5%;
     width: 100%;
     display: flex;
     flex-direction: row;
+
     /* padding: 3%; */
     justify-content: flex-end;
     align-content: center;
     gap: 20px;
   }
+
   .campaign {
     padding: 10px 3px;
     display: flex;
@@ -380,7 +433,8 @@ footer {
     text-align: center;
     width: 15%;
   }
-  /*----------------------------------main page--------------------------------*/
+
+  /* ----------------------------------main page-------------------------------- */
   .main-page {
     margin: 0;
     background-image: url("assets/home-desk.png");
@@ -389,18 +443,22 @@ footer {
     height: 100vh;
     width: 100%;
   }
+
   h1 {
     font-size: 80px;
     font-weight: bold;
   }
+
   .greet {
     margin-bottom: 1%;
     font-size: 30px;
   }
+
   .welcome {
     margin-top: 4%;
     padding: 1.75%;
   }
+
   .info {
     margin-top: 10px;
     margin-left: 8%;
@@ -410,27 +468,34 @@ footer {
     text-align: center;
     padding: 8px 0 0 0;
   }
+
   .time-place {
     font-weight: bolder;
   }
+
   .time {
     font-size: 40px;
   }
+
   .place {
     font-size: 30px;
   }
-  /*-------------------------------programs----------------------------*/
+
+  /* -------------------------------programs---------------------------- */
   .program-list {
     display: flex;
     flex-direction: row;
   }
+
   .programs {
     background-size: 3% 4%;
   }
+
   .program {
     display: flex;
     flex-direction: column;
   }
+
   #program1 {
     padding: 1%;
     display: flex;
@@ -440,6 +505,7 @@ footer {
     width: 30%;
     text-align: center;
   }
+
   #program2 {
     padding: 1%;
     display: flex;
@@ -449,6 +515,7 @@ footer {
     width: 30%;
     text-align: center;
   }
+
   #program3 {
     padding: 1%;
     display: flex;
@@ -458,6 +525,7 @@ footer {
     width: 30%;
     text-align: center;
   }
+
   #program4 {
     padding: 1%;
     display: flex;
@@ -467,6 +535,7 @@ footer {
     width: 30%;
     text-align: center;
   }
+
   #program5 {
     padding: 1.1%;
     display: flex;
@@ -476,11 +545,13 @@ footer {
     width: 30%;
     text-align: center;
   }
+
   .program:hover {
     height: 100%;
     border: 2px solid #fff;
   }
-  /*-------------------------------speakers-----------------------------------*/
+
+  /* -------------------------------speakers----------------------------------- */
 
   .hidden {
     margin: 0;
@@ -489,15 +560,18 @@ footer {
     height: 100%;
     width: 100%;
   }
+
   .active {
     display: flex;
   }
+
   #featured-speakers {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     width: 80%;
   }
+
   .featured-speaker-profile-container {
     height: auto;
     width: auto;
@@ -507,13 +581,16 @@ footer {
     background-repeat: no-repeat;
     padding: 7% 0 0 7%;
   }
+
   .more {
     display: none;
   }
+
   .close {
     display: none;
   }
-  /*--------------------------------footer--------------------------------------*/
+
+  /* --------------------------------footer-------------------------------------- */
   .sponsors {
     background-color: #202a32;
     display: flex;
@@ -522,6 +599,7 @@ footer {
     align-items: center;
     padding: 3% 0;
   }
+
   .sponsor-list {
     margin: 10px;
     display: flex;
@@ -530,6 +608,7 @@ footer {
     text-align: center;
     font-size: 50px;
   }
+
   .first3 {
     margin: 10px 0;
     display: flex;
@@ -537,6 +616,7 @@ footer {
     justify-content: center;
     text-align: center;
   }
+
   .bottom2 {
     margin: 10px 0;
     display: flex;
@@ -544,23 +624,28 @@ footer {
     justify-content: center;
     text-align: center;
   }
+
   .sponsor-list li {
     color: #adadad;
     margin: 0 10px;
   }
+
   .sponsors h3 {
     color: #656565;
     font-size: 40px;
   }
+
   .hr3 {
     margin-right: 0;
     width: 40%;
   }
-  /*-------------------------footer -----------------------------------------*/
+
+  /* -------------------------footer ----------------------------------------- */
   footer img {
     height: 10%;
     width: 10%;
   }
+
   footer {
     background-color: white;
     text-align: left;
@@ -570,22 +655,27 @@ footer {
     grid-gap: 25px;
     padding: 2% 5%;
   }
+
   .left-side {
     margin-left: 30%;
     display: flex;
     flex-direction: row;
   }
+
   footer .left-side aside {
     font-size: 17px;
     font-weight: 700;
   }
-  .right-side{
+
+  .right-side {
     margin-right: 40%;
   }
+
   .right-side p {
     font-size: 14px;
     font-weight: 350;
   }
+
   #some-text {
     font-size: 10px;
     font-weight: normal;

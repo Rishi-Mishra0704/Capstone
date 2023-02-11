@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 * {
   list-style-type: none;
   overflow-x: hidden;
@@ -6,22 +7,26 @@
   margin: 0;
   font-family: "Lato", sans-serif;
 }
+
 a:-webkit-any-link {
   color: white;
   cursor: pointer;
   text-decoration: none;
 }
 
-/*----------------------------- Nav Bar -------------------------------------*/
+/* ----------------------------- Nav Bar ------------------------------------- */
 a {
   color: #fff;
 }
+
 .header-list {
   display: none;
 }
+
 #home a {
   color: black;
 }
+
 .nav {
   text-decoration: none;
   height: 100%;
@@ -29,6 +34,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 #nav-bar {
   text-decoration: none;
   height: 100%;
@@ -36,6 +42,7 @@ a {
   display: none;
   position: absolute;
 }
+
 .close {
   display: none;
   border: none;
@@ -60,9 +67,11 @@ a {
   color: #656565;
   font-size: 26px;
 }
+
 .logo {
   display: none;
 }
+
 .nav-list {
   display: none;
   padding: 10px 10%;
@@ -86,6 +95,7 @@ a {
   font-size: 14px;
   width: 30%;
 }
+
 .nav-items:active,
 .nav-items:hover {
   color: orangered;
@@ -93,7 +103,7 @@ a {
   cursor: pointer;
 }
 
-/*--------------------------------------Main page ----------------------------*/
+/* --------------------------------------Main page ---------------------------- */
 .main-page {
   margin: 0;
   background-image: url("assets/home-bg.png");
@@ -102,6 +112,7 @@ a {
   height: 100vh;
   width: 100%;
 }
+
 .welcome {
   padding: 0;
   margin: 5%;
@@ -110,12 +121,14 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 .greet {
   margin: 0;
   font-size: 30px;
   color: #ec5242;
   font-weight: lighter;
 }
+
 h1 {
   text-align: center;
   font-size: 44px;
@@ -123,6 +136,7 @@ h1 {
   color: #ec5242;
   background: none;
 }
+
 .main-info1 {
   font-size: 16px;
   padding: 10px 5px 10px 5px;
@@ -132,32 +146,37 @@ h1 {
   text-align: center;
   color: #656565;
 }
+
 .main-info2 {
   display: none;
 }
+
 .hr1 {
   margin-left: 43%;
   width: 12%;
   border: 2px solid #ec5242;
 }
+
 .contact-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .contact-text {
   text-align: center;
   margin: 10px 20px;
   color: #656565;
   margin-top: 20px;
 }
+
 .email {
   margin: 10px 0;
   font-weight: 700;
   text-decoration: underline;
 }
 
-/*LOGO and description*/
+/* LOGO and description */
 
 .logo-selection {
   padding: 3em 2em;
@@ -189,7 +208,7 @@ h1 {
   border-bottom: 2px solid #adadad;
 }
 
-/*----------------------------- Summits ---------------------------------*/
+/* ----------------------------- Summits --------------------------------- */
 
 .past-summit {
   background-color: white;
@@ -250,11 +269,13 @@ h1 {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 #summit-hr {
   border: 1px solid #ec5242;
   width: 10%;
 }
-/*----------------------------- Sponsors ---------------------------------*/
+
+/* ----------------------------- Sponsors --------------------------------- */
 .sponsors {
   background-color: #202a32;
   display: flex;
@@ -263,6 +284,7 @@ h1 {
   align-items: center;
   padding: 3% 0;
 }
+
 .sponsor-list {
   margin: 10px;
   display: flex;
@@ -271,6 +293,7 @@ h1 {
   text-align: center;
   font-size: 26px;
 }
+
 .first3 {
   margin: 10px 0;
   display: flex;
@@ -278,6 +301,7 @@ h1 {
   justify-content: center;
   text-align: center;
 }
+
 .bottom2 {
   margin: 10px 0;
   display: flex;
@@ -285,26 +309,31 @@ h1 {
   justify-content: center;
   text-align: center;
 }
+
 .hr3 {
   margin-right: 3%;
   margin-left: 2%;
   border: 1px solid #ec5242;
   width: 21%;
 }
+
 .sponsor-list li {
   color: #adadad;
   margin: 0 10px;
 }
+
 .sponsors h3 {
   margin: 1% 0;
   font-size: 20px;
   color: #fff;
 }
-/* ----------------------------------footer ----------------------------*/
+
+/* ----------------------------------footer ---------------------------- */
 footer img {
   height: 20%;
   width: 20%;
 }
+
 footer {
   background-color: #fff;
   text-align: left;
@@ -315,43 +344,52 @@ footer {
   padding: 2% 5%;
   color: #000;
 }
+
 .left-side {
   margin-left: 30%;
   display: flex;
   flex-direction: row;
 }
+
 footer .left-side .forMobile {
   display: flex;
   flex-direction: row;
   font-size: 12px;
   font-weight: 700;
 }
+
 .right-side {
   margin-right: 40%;
 }
+
 .right-side p {
   font-size: 10px;
   font-weight: 350;
 }
+
 #some-text {
   display: none;
   font-size: 10px;
   font-weight: normal;
 }
-.for-mobile{
+
+.for-mobile {
   display: block;
   font-size: 12px;
 }
-.for-mobile img{
+
+.for-mobile img {
   width: 20%;
   height: 20%;
 }
-.forDesk{
+
+.forDesk {
   display: none;
 }
-/*--------------------Desktop Styles -------------------------------------*/
+
+/* --------------------Desktop Styles ------------------------------------- */
 @media only screen and (min-width: 786px) {
-  /*------------------------Nav bar --------------------------------------*/
+  /* ------------------------Nav bar -------------------------------------- */
   .header-list {
     display: flex;
     justify-content: right;
@@ -360,31 +398,39 @@ footer .left-side .forMobile {
     padding-right: 10%;
     height: 50px;
   }
+
   .logo {
     display: block;
     color: #202a32;
   }
+
   .logo a {
     color: #202a32;
   }
+
   .logo img {
     margin-left: 30px;
     width: 45%;
   }
+
   .header-list li {
     text-decoration: none;
     margin: 0 10px;
     color: #fff;
   }
+
   .hamburger {
     display: none;
   }
+
   .close {
     display: none;
   }
+
   .nav {
     width: 100%;
   }
+
   #nav-bar {
     width: 100%;
     height: 10%;
@@ -392,19 +438,23 @@ footer .left-side .forMobile {
     position: relative;
     flex-direction: row;
   }
+
   #nav-bar ul {
     width: 100%;
   }
+
   .nav-list {
     margin: 0% 5%;
     width: 100%;
     display: flex;
     flex-direction: row;
+
     /* padding: 3%; */
     justify-content: flex-end;
     align-content: center;
     gap: 20px;
   }
+
   .campaign {
     padding: 10px 3px;
     display: flex;
@@ -416,31 +466,37 @@ footer .left-side .forMobile {
     text-align: center;
     width: 15%;
   }
+
   .nav-list #home a {
     color: #202a32;
   }
+
   .nav-items:active,
   .nav-items:hover {
     color: orangered;
     transform: scale(110%);
     transition: all 0.3s linear;
   }
-  /* ----------------------------Main page -----------------------------------*/
+
+  /* ----------------------------Main page ----------------------------------- */
   .main-page {
     background-image: url("assets/home-desk.png");
   }
+
   .main-info1 {
     display: none;
   }
-  .welcome{
+
+  .welcome {
     margin: 0;
     margin-top: 40px;
     margin-bottom: 30px;
   }
+
   .main-info2 {
     text-align: center;
     border: 2px solid #adadad;
-    display:block;
+    display: block;
     margin: 2% 26%;
     font-size: 20px;
     width: 40%;
@@ -450,12 +506,15 @@ footer .left-side .forMobile {
     padding-top: 10px;
     margin-top: 3%;
   }
+
   .greet {
     font-size: 30px;
   }
+
   h1 {
     font-size: 70px;
   }
+
   .contact-section {
     display: flex;
     flex-direction: column;
@@ -463,14 +522,17 @@ footer .left-side .forMobile {
     margin-top: -20px;
     margin-bottom: 20px;
   }
+
   .contact-text {
     color: #656565;
   }
+
   .email {
     font-weight: 700;
     text-decoration: underline;
   }
-  /* ----------------------------------logo -----------------------------------*/
+
+  /* ----------------------------------logo ----------------------------------- */
   .logo-selection {
     padding: 3em 2em;
     text-align: center;
@@ -501,30 +563,35 @@ footer .left-side .forMobile {
     border-bottom: 2px solid #adadad;
   }
 
-  /*-------------------------------- Summits -------------------------------*/
+  /* -------------------------------- Summits ------------------------------- */
   .past-summits-container {
     width: 70%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   #summit-hr {
     margin-left: 46%;
     width: 5%;
   }
+
   .past-summit h3 {
     font-size: 26px;
   }
-  /*-------------------Sponsors --------------------------------------------*/
+
+  /* -------------------Sponsors -------------------------------------------- */
   .sponsors {
     display: none;
   }
-  /* ----------------------- footer ----------------------------------*/
+
+  /* ----------------------- footer ---------------------------------- */
 
   footer img {
     height: 10%;
     width: 10%;
   }
+
   footer {
     background-color: #202a32;
     text-align: left;
@@ -535,31 +602,38 @@ footer .left-side .forMobile {
     padding: 2% 5%;
     color: #fff;
   }
+
   .left-side {
     margin-left: 30%;
     display: flex;
     flex-direction: row;
   }
+
   footer .left-side .forDesk {
     font-size: 17px;
     font-weight: 700;
   }
+
   .right-side {
     margin-right: 40%;
   }
+
   .right-side p {
     font-size: 14px;
     font-weight: 350;
   }
+
   #some-text {
     display: block;
     font-size: 10px;
     font-weight: normal;
   }
-  .forDesk{
+
+  .forDesk {
     display: block;
   }
-  .for-mobile{
+
+  .for-mobile {
     display: none;
   }
 }
