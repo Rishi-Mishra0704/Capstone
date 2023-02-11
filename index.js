@@ -5,6 +5,8 @@ const closeBtn = document.getElementById("close");
 const navList = document.getElementById("nav-list");
 const speakerContainer = document.getElementById("speaker-container");
 const featuredSpeakers = document.getElementById("featured-speakers");
+const moreBtn = document.getElementById("more");
+const lessBtn = document.getElementById("less");
 //End of imports ------------------------------------------------------------------
 // Navbar algorithm
 menuBtn.onclick = function display() {
@@ -33,67 +35,84 @@ const speakers = [
     speakerName: "Yochai Benkler",
     speakerImg: "./assets/benkler.png",
     title:
-      "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, sint.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos incidunt quasi aspernatur temporibus quam?",
   },
   {
     key: 1,
-    speakerName: "Yochai Benkler",
+    speakerName: "SohYeong Roh",
     speakerImg: "./assets/roh.png",
     title:
-      "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, sint.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos incidunt quasi aspernatur temporibus quam.",
   },
   {
     key: 2,
-    speakerName: "Yochai Benkler",
+    speakerName: "Kilnam Chon",
     speakerImg: "./assets/chon.png",
     title:
-      "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, sint.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos incidunt quasi aspernatur temporibus quam.",
   },
   {
     key: 3,
-    speakerName: "Yochai Benkler",
-    speakerImg: "./assets/julia.png",
+    speakerName: "Julia Leda",
+    speakerImg: "./assets/leda.png",
     title:
-      "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, sint.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos incidunt quasi aspernatur temporibus quam.",
   },
   {
     key: 4,
-    speakerName: "Yochai Benkler",
+    speakerName: "Lila Tretikov",
     speakerImg: "./assets/lila.png",
     title:
-      "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, sint.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos incidunt quasi aspernatur temporibus quam.",
   },
   {
     key: 5,
-    speakerName: "Yochai Benkler",
+    speakerName: "Ryan Merkley",
     speakerImg: "./assets/merkley.png",
     title:
-      "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, sint.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos incidunt quasi aspernatur temporibus quam.",
   },
 ];
-speakers.forEach((speaker) => {
+for (let i = 0; i <= speakers.length; i++) {
   const listItem = document.createElement("li");
-  listItem.className = "featured-speaker";
+  listItem.className = "featured-speaker active";
   listItem.innerHTML = `<div class="featured-speaker-profile-container">
-            <img src="${speaker.speakerImg}" alt="${speaker.speakerName}">
-        </div>
-        <div class="featured-speaker__info">
-            <h4 class="featured-speaker__name">${speaker.speakerName}</h4>
-            <p class="featured-speaker__title">${speaker.title}</p>
-            <hr />
-            <p class="featured-speaker__about">${speaker.description}</p>
-        </div>`;
+  <img src="${speakers[i].speakerImg}" alt="${speakers[i].speakerName}">
+</div>
+<div class="featured-speaker__info">
+  <h4 class="featured-speaker__name">${speakers[i].speakerName}</h4>
+  <p class="featured-speaker__title">${speakers[i].title}</p>
+  <hr />
+  <p class="featured-speaker__about">${speakers[i].description}</p>
+</div>`;
   featuredSpeakers.appendChild(listItem);
-});
+  if (i >= 2) {
+    listItem.className = "featured-speaker hidden";
+  }
+  moreBtn.addEventListener("click", () => {
+    listItem.className = "featured-speaker active";
+    lessBtn.style.display = "block";
+    moreBtn.style.display = "none";
+  });
+  if (i >= 2) {
+    lessBtn.addEventListener("click", () => {
+      listItem.className = "featured-speaker hidden";
+      lessBtn.style.display = "none";
+      moreBtn.style.display = "block";
+    });
+  }
+}
+
+// END of speakers

@@ -13,8 +13,22 @@
   </head>
   <body>
     <header>
+      <ul class="header-list">
+        <li>
+          <a href="#"><i class="fa fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+        </li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">My Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+
       <nav class="nav">
-        <div class="logo"><a href="#">logo</a></div>
+        <div class="logo">
+          <a href="#main-page"><img src="assets/logo.png" /></a>
+        </div>
         <div id="nav-bar">
           <ul class="nav-list" id="nav-list">
             <button class="close" id="close">&times;</button>
@@ -23,13 +37,13 @@
             <li class="nav-items" id="join">Join</li>
             <li class="nav-items" id="sponsor">Sponsor</li>
             <li class="nav-items" id="news">News</li>
-            <li><div class="campaign">CC Campaign</div></li>
+            <li class="campaign">CC Campaign</li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="container">
-      <section class="main-page">
+      <section class="main-page" id="main-page">
         <button type="button" class="hamburger" id="menuBtn">
           <i class="fa fa-bars"></i>
         </button>
@@ -52,7 +66,7 @@
         <hr class="hr1" />
         <div class="program-container">
           <ul class="program-list">
-            <li class="program">
+            <li class="program" id="program1">
               <img class="program-img" src="assets/lecture-icon.png" />
               <p class="program-name" id="name-lecture">Lecture</p>
               <div class="program-info">
@@ -60,7 +74,7 @@
                 message about sharing and openness.
               </div>
             </li>
-            <li class="program">
+            <li class="program" id="program2">
               <img class="program-img" src="assets/exhibition-icon.png" />
               <p class="program-name" id="name-lecture">CC<br />Exhibition</p>
               <div class="program-info">
@@ -68,7 +82,7 @@
                 organized from Art Center Nabi.
               </div>
             </li>
-            <li class="program">
+            <li class="program" id="program3">
               <img class="program-img" src="assets/forum-icon.png" />
               <p class="program-name">Forum</p>
               <div class="program-info">
@@ -76,7 +90,7 @@
                 for each topic.
               </div>
             </li>
-            <li class="program">
+            <li class="program" id="program4">
               <img class="program-img" src="assets/workshop-icon.png" />
               <p class="program-name">Workshop</p>
               <div class="program-info">
@@ -84,7 +98,7 @@
                 just watching
               </div>
             </li>
-            <li class="program">
+            <li class="program" id="program5">
               <img class="program-img" src="assets/ignite-icon.png" />
               <p class="program-name">CC Ignite</p>
               <div class="program-info">
@@ -100,12 +114,51 @@
       </section>
       <section class="speakers" id="speaker-container">
         <h3 class="speaker-txt">Featured speakers</h3>
-        <hr class="hr2"/>
+        <hr class="hr2" />
         <div id="featured-speakers"></div>
-        <button type="button" class="more">More<i class="fa fa-regular fa-chevron-down"></i></button>
+        <button type="button" class="more" id="more">
+          More<i class="fa fa-regular fa-chevron-down"></i>
+        </button>
+        <button type="button" class="less" id="less">
+          Less<i class="fa fa-regular fa-chevron-up"></i>
+        </button>
+      </section>
+      <section class="sponsors">
+        <h3>Partners</h3>
+        <hr class="hr1" />
+        <ul class="sponsor-list">
+          <div class="first3">
+            <li id="mozilla">
+              <i class="fa fa-brands fa-firefox"> firefox</i>
+            </li>
+            <li id="google"><i class="fa fa-brands fa-google"> google</i></li>
+            <li id="amazon">
+              <i class="fa fa-brands fa-amazon"> amazon</i>
+            </li>
+          </div>
+          <div class="bottom2">
+            <li id="netflix"><i class="fa fa-brands fa-apple"></i> apple</li>
+            <li id="air"><i class="fa fa-brands fa-whatsapp"></i> whatsapp</li>
+          </div>
+        </ul>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="left-side">
+        <img src="assets/cc.svg" alt="CC" />
+        <aside>
+          Creative<br />
+          Commons India
+        </aside>
+      </div>
+      <div class="right-side">
+        <p>2023 Creative Commons India. Some rights reserved.</p>
+        <p id="some-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui
+          minus quam. Pariatur, cumque aliquam
+        </p>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

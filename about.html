@@ -13,23 +13,37 @@
   </head>
   <body>
     <header>
+      <ul class="header-list">
+        <li>
+          <a href="#"><i class="fa fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+        </li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">My Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+
       <nav class="nav">
-        <div class="logo"><a href="#">logo</a></div>
+        <div class="logo">
+          <a href="index.html"><img src="assets/logo.png" /></a>
+        </div>
         <div id="nav-bar">
           <ul class="nav-list" id="nav-list">
             <button class="close" id="close">&times;</button>
             <li class="nav-items" id="home"><a href="index.html">Home</a></li>
-            <li class="nav-items" id="about"><a href="#">About</a></li>
+            <li class="nav-items" id="about">About</li>
             <li class="nav-items" id="join">Join</li>
             <li class="nav-items" id="sponsor">Sponsor</li>
             <li class="nav-items" id="news">News</li>
-            <li><div class="campaign">CC Campaign</div></li>
+            <li class="campaign">CC Campaign</li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="container">
-      <section class="main-page">
+      <section class="main-page" id="main-page">
         <button type="button" class="hamburger" id="menuBtn">
           <i class="fa fa-bars"></i>
         </button>
@@ -37,24 +51,106 @@
           <h2 class="greet">"Hello !! Sharing World."</h2>
           <h1 class="intro">Creative Commons global summit 2023.</h1>
         </div>
-        <div class="main-info">
-          The Global Summit brings together the community of experts, academics,
-          and activists who comprise the Creative Commons affiliate network in a
-          different country every two. This year, we hope to expand our
-          invitation list including organizations and individuals
+        <hr class="hr1" />
+        <div class="main-info1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vel
+          adipisci sapiente accusantium ipsum vitae incidunt, minima placeat
+          modi similique delectus, nostrum enim fugiat iusto repellendus? Facere
+          neque nobis deserunt.
+        </div>
+        <div class="main-info2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          ullam non voluptate placeat culpa modi blanditiis natus, atque quaerat
+          reiciendis deleniti facere cumque eum earum soluta explicabo accusamus
+          nostrum voluptatem expedita? Repellat quis quidem ullam?
         </div>
         <div class="contact-section">
           <div class="contact-text">
             Please contact us per Email for any further questions about CC
-            Global Summit 2023! 
+            Global Summit 2023!
           </div>
-          <div class="email">ccsummit2023@xyz.org</div>
+          <div class="email">
+            ccsummit2023@xyz.org <i class="fa fa-light fa-chevron-right"></i>
+          </div>
         </div>
       </section>
-      <section class="logo">program</section>
-      <section class="speakers">speaker</section>
+      <section class="logo-selection">
+        <h3>CC Global Summit 2023 Logo</h3>
+        <hr class="hr1" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          atque doloremque eveniet quas quidem labore eius ab.
+        </p>
+        <div class="logo-selection__logo">
+          <img src="./assets/logo.png" alt="logo" />
+        </div>
+      </section>
+      <hr class="hr-full" />
+
+      <section class="past-summit">
+        <h3>See the CC Global past Summits</h3>
+        <hr class="hr1" id="summit-hr" />
+        <p>Take a look at past summits happened in Goa and Pune</p>
+        <div class="past-summits-container">
+          <div class="past-summit-container">
+            <img
+              src="./assets/conference.jpeg"
+              alt="Avatar"
+              class="past-summit-bg"
+            />
+            <div class="past-summit-data">
+              <h4>2021</h4>
+              <p>CC Global Summit 2021 Goa</p>
+            </div>
+          </div>
+          <div class="past-summit-container">
+            <img
+              src="./assets/conference.jpeg"
+              alt="Avatar"
+              class="past-summit-bg"
+            />
+            <div class="past-summit-data">
+              <h4>2022</h4>
+              <p>CC Global Summit 2022 Pune</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsors">
+        <h3>Partners</h3>
+        <hr class="hr3" />
+        <ul class="sponsor-list">
+          <div class="first3">
+            <li id="mozilla"><i class="fa fa-brands fa-firefox">firefox</i></li>
+            <li id="google"><i class="fa fa-brands fa-google">google</i></li>
+            <li id="amazon">
+              <i class="fa fa-brands fa-amazon">amazon</i>
+            </li>
+          </div>
+          <div class="bottom2">
+            <li id="netflix"><i class="fa fa-brands fa-apple"></i> apple</li>
+            <li id="air"><i class="fa fa-brands fa-whatsapp"></i> whatsapp</li>
+          </div>
+        </ul>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="left-side">
+        <img src="assets/cc.svg" alt="CC" />
+        <aside class="forDesk">
+          Creative<br />
+          Commons India
+        </aside>
+        <aside class="for-mobile">Creative Commons India</aside>
+      </div>
+      <div class="right-side">
+        <p>2023 Creative Commons India. Some rights reserved.</p>
+        <p id="some-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui
+          minus quam. Pariatur, cumque aliquam
+        </p>
+      </div>
+    </footer>
     <script src="about.js"></script>
   </body>
 </html>
