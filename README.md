@@ -42,7 +42,7 @@
 
 - <a href="#">Check out the live demo</a> 
 
-- <a href="#">Check out the live video</a> 
+- <a href="https://drive.google.com/file/d/1Gaxj8Q_P4J677fAH13IeJT8Anl6MXtdZ/view?usp=share_link">Check out the live video</a> 
 
 <details>
   <summary>Client</summary>
