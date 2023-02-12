@@ -8,6 +8,10 @@
   font-family: "Lato", sans-serif;
 }
 
+a {
+  color: #fff;
+}
+
 a:-webkit-any-link {
   color: white;
   cursor: pointer;
@@ -15,10 +19,6 @@ a:-webkit-any-link {
 }
 
 /* ------------------------ Nav bar -------------------------- */
-a {
-  color: #fff;
-}
-
 .header-list {
   display: none;
 }
@@ -77,8 +77,6 @@ a {
   padding: 10px 10%;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   font-size: 30px;
   background-color: #fff;
   gap: 10px;
@@ -217,7 +215,6 @@ h1 {
   margin: 1% 3%;
   font-size: 16px;
   background: rgba(128, 127, 127, 0.3);
-  backdrop-filter: 0.7;
 }
 
 .program-img {
@@ -376,6 +373,11 @@ footer {
     color: #202a32;
   }
 
+  footer img {
+    height: 10%;
+    width: 10%;
+  }
+
   .logo img {
     margin-left: 30px;
     width: 45%;
@@ -388,6 +390,10 @@ footer {
   }
 
   .hamburger {
+    display: none;
+  }
+
+  #menuBtn {
     display: none;
   }
 
@@ -586,10 +592,6 @@ footer {
     display: none;
   }
 
-  .close {
-    display: none;
-  }
-
   /* --------------------------------footer-------------------------------------- */
   .sponsors {
     background-color: #202a32;
@@ -641,10 +643,6 @@ footer {
   }
 
   /* -------------------------footer ----------------------------------------- */
-  footer img {
-    height: 10%;
-    width: 10%;
-  }
 
   footer {
     background-color: white;
