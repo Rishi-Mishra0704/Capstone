@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  list-style-type: none;
+  overflow-x: hidden;
+  text-decoration: none;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: #fff;
+}
+
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ----------------------------- Nav Bar ------------------------------------- */
+
+.header-list {
+  display: none;
+}
+
+#home a {
+  color: black;
+}
+
+.nav {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-bar {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+
+.close {
+  display: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 30px;
+  height: 10%;
+  width: 10%;
+  color: orangered;
+  float: right;
+  margin-left: 95%;
+}
+
+.hamburger {
+  display: block;
+  height: 10%;
+  width: 10%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: #656565;
+  font-size: 26px;
+}
+
+.logo {
+  display: none;
+}
+
+.nav-list {
+  display: none;
+  padding: 10px 10%;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  background-color: #fff;
+  gap: 10px;
+}
+
+.campaign {
+  /* margin: 0 auto; */
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid orangered;
+  color: orangered;
+  background: transparent;
+  font-size: 14px;
+  width: 30%;
+}
+
+.nav-items:active,
+.nav-items:hover {
+  color: orangered;
+  transition: all 0.4ms linear;
+  cursor: pointer;
+}
+
+/* --------------------------------------Main page ---------------------------- */
+.main-page {
+  margin: 0;
+  background-image: url("assets/home-bg.png");
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 100%;
+}
+
+.welcome {
+  padding: 0;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.greet {
+  margin: 0;
+  font-size: 30px;
+  color: #ec5242;
+  font-weight: lighter;
+}
+
+h1 {
+  text-align: center;
+  font-size: 44px;
+  margin: 0;
+  color: #ec5242;
+  background: none;
+}
+
+.main-info1 {
+  font-size: 16px;
+  padding: 10px 5px 10px 5px;
+  margin-top: 5%;
+  border: 2px solid #adadad;
+  background: #fff;
+  text-align: center;
+  color: #656565;
+}
+
+.main-info2 {
+  display: none;
+}
+
+.hr1 {
+  margin-left: 43%;
+  width: 12%;
+  border: 2px solid #ec5242;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-text {
+  text-align: center;
+  margin: 10px 20px;
+  color: #656565;
+  margin-top: 20px;
+}
+
+.email {
+  margin: 10px 0;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* LOGO and description */
+
+.logo-selection {
+  padding: 3em 2em;
+  text-align: center;
+  background-color: white;
+}
+
+.logo-selection h3 {
+  margin: 10px 0;
+  padding: 0 2em;
+}
+
+.logo-selection p {
+  margin: 10px 0;
+  padding: 0 2em;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #656565;
+}
+
+.logo-selection__logo {
+  width: 100%;
+  margin-top: 3em;
+  border: 1.5px solid #adadad;
+}
+
+.hr-full {
+  width: 100%;
+  border-bottom: 2px solid #adadad;
+}
+
+/* ----------------------------- Summits --------------------------------- */
+
+.past-summit {
+  background-color: white;
+  text-align: center;
+  padding: 3em 0;
+}
+
+.past-summit h3 {
+  padding: 0 2em;
+  margin: 10px 0;
+}
+
+.past-summit p {
+  padding: 0 2em;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #656565;
+  margin: 10px 0;
+}
+
+.past-summit-container {
+  position: relative;
+  margin: 1em 2em;
+  min-height: 9.063em;
+  min-width: 16.563em;
+}
+
+.past-summit-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.past-summit-data {
+  position: absolute;
+  bottom: 0;
+  background: rgba(236, 82, 66, 0.8);
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  padding: 20px 10px 20px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-summit-data h4 {
+  color: inherit;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.past-summit-data p {
+  color: inherit;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#summit-hr {
+  border: 1px solid #ec5242;
+  width: 10%;
+}
+
+/* ----------------------------- Sponsors --------------------------------- */
+.sponsors {
+  background-color: #202a32;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
+}
+
+.sponsor-list {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 26px;
+}
+
+.first3 {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.bottom2 {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.hr3 {
+  margin-right: 3%;
+  margin-left: 2%;
+  border: 1px solid #ec5242;
+  width: 21%;
+}
+
+.sponsor-list li {
+  color: #adadad;
+  margin: 0 10px;
+}
+
+.sponsors h3 {
+  margin: 1% 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* ----------------------------------footer ---------------------------- */
+footer img {
+  height: 20%;
+  width: 20%;
+}
+
+footer {
+  background-color: #fff;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center center;
+  grid-gap: 25px;
+  padding: 2% 5%;
+  color: #000;
+}
+
+.left-side {
+  margin-left: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .left-side .forMobile {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.right-side {
+  margin-right: 40%;
+}
+
+.right-side p {
+  font-size: 10px;
+  font-weight: 350;
+}
+
+#some-text {
+  display: none;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.for-mobile {
+  display: block;
+  font-size: 12px;
+}
+
+.for-mobile img {
+  width: 20%;
+  height: 20%;
+}
+
+.forDesk {
+  display: none;
+}
+
+/* --------------------Desktop Styles ------------------------------------- */
+@media only screen and (min-width: 786px) {
+  /* ------------------------Nav bar -------------------------------------- */
+  .header-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #202a32;
+    padding-right: 10%;
+    height: 50px;
+  }
+
+  .logo {
+    display: block;
+    color: #202a32;
+  }
+
+  .logo a {
+    color: #202a32;
+  }
+
+  footer img {
+    height: 10%;
+    width: 10%;
+  }
+
+  .logo img {
+    margin-left: 30px;
+    width: 45%;
+  }
+
+  .header-list li {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  #nav-bar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+  }
+
+  #nav-bar ul {
+    width: 100%;
+  }
+
+  .nav-list {
+    margin: 0% 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    /* padding: 3%; */
+    justify-content: flex-end;
+    align-content: center;
+    gap: 20px;
+  }
+
+  .campaign {
+    padding: 10px 3px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid orangered;
+    color: orangered;
+    background: transparent;
+    font-size: 14px;
+    text-align: center;
+    width: 15%;
+  }
+
+  .nav-list #home a {
+    color: #202a32;
+  }
+
+  .nav-items:active,
+  .nav-items:hover {
+    color: orangered;
+    transition: all 0.3s linear;
+  }
+
+  /* ----------------------------Main page ----------------------------------- */
+  .main-page {
+    background-image: url("assets/home-desk.png");
+  }
+
+  .main-info1 {
+    display: none;
+  }
+
+  .welcome {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .main-info2 {
+    text-align: center;
+    border: 2px solid #adadad;
+    display: block;
+    margin: 2% 26%;
+    font-size: 20px;
+    width: 40%;
+    height: 25%;
+    background-color: #fff;
+    padding: 10px 20px;
+    padding-top: 10px;
+    margin-top: 3%;
+  }
+
+  .greet {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-text {
+    color: #656565;
+  }
+
+  .email {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  /* ----------------------------------logo ----------------------------------- */
+  .logo-selection {
+    padding: 3em 2em;
+    text-align: center;
+    background-color: white;
+  }
+
+  .logo-selection h3 {
+    padding: 0 2em;
+  }
+
+  .logo-selection p {
+    padding: 0 2em;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .logo-selection__logo {
+    width: 50%;
+    margin-top: 3em;
+    margin-left: 20%;
+    padding: 2em;
+    padding-right: 5%;
+    border: 2px solid #adadad;
+  }
+
+  .hr-full {
+    width: 100%;
+    border-bottom: 2px solid #adadad;
+  }
+
+  /* -------------------------------- Summits ------------------------------- */
+  .past-summits-container {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #summit-hr {
+    margin-left: 46%;
+    width: 5%;
+  }
+
+  .past-summit h3 {
+    font-size: 26px;
+  }
+
+  /* -------------------Sponsors -------------------------------------------- */
+  .sponsors {
+    display: none;
+  }
+
+  /* ----------------------- footer ---------------------------------- */
+
+  footer {
+    background-color: #202a32;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center center;
+    grid-gap: 25px;
+    padding: 2% 5%;
+    color: #fff;
+  }
+
+  .left-side {
+    margin-left: 30%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .forDesk {
+    display: block;
+  }
+
+  footer .left-side .forDesk {
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .right-side {
+    margin-right: 40%;
+  }
+
+  .right-side p {
+    font-size: 14px;
+    font-weight: 350;
+  }
+
+  #some-text {
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .for-mobile {
+    display: none;
+  }
+}

@@ -38,6 +38,11 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 > This project is build purely by html and vanilla css and vanilla js.
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- <a href="#">Check out the live demo</a> 
+
+- <a href="https://drive.google.com/file/d/1Gaxj8Q_P4J677fAH13IeJT8Anl6MXtdZ/view?usp=share_link">Check out the live video</a> 
 
 <details>
   <summary>Client</summary>
@@ -124,7 +129,10 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Cindy Shin for this awesome project .
+It must have taken a lot of hard work and dedication.
+By Re-creating this project my self I understand the hard work behind it.
+So Thank You For Creating Such an Amazing Website .
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
