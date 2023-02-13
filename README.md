@@ -40,7 +40,7 @@
 > This project is build purely by html and vanilla css and vanilla js.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="#">Check out the live demo</a> 
+- <a href="https://rishi-mishra0704.github.io/Capstone/">Check out the live demo</a> 
 
 - <a href="https://drive.google.com/file/d/1Gaxj8Q_P4J677fAH13IeJT8Anl6MXtdZ/view?usp=share_link">Check out the live video</a> 
 
