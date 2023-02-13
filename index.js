@@ -33,8 +33,8 @@ window.onclick = function exit(event) {
 const speakers = [
   {
     key: 0,
-    speakerName: 'Yochai Benkler',
-    speakerImg: './assets/benkler.png',
+    speakerName: 'Garry Kasparov',
+    speakerImg: './assets/garry.jpeg',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?',
     description:
@@ -42,8 +42,8 @@ const speakers = [
   },
   {
     key: 1,
-    speakerName: 'SohYeong Roh',
-    speakerImg: './assets/roh.png',
+    speakerName: 'Vishwanathan Anand',
+    speakerImg: './assets/anand.jpeg',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?',
     description:
@@ -51,8 +51,8 @@ const speakers = [
   },
   {
     key: 2,
-    speakerName: 'Kilnam Chon',
-    speakerImg: './assets/chon.png',
+    speakerName: 'Magnus Carlsen',
+    speakerImg: './assets/magnus.jpeg',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?',
     description:
@@ -60,8 +60,8 @@ const speakers = [
   },
   {
     key: 3,
-    speakerName: 'Julia Leda',
-    speakerImg: './assets/leda.png',
+    speakerName: 'Vladimir Kramnik',
+    speakerImg: './assets/kramnik.jpeg',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?',
     description:
@@ -69,8 +69,8 @@ const speakers = [
   },
   {
     key: 4,
-    speakerName: 'Lila Tretikov',
-    speakerImg: './assets/lila.png',
+    speakerName: 'Hikaru Nakamura',
+    speakerImg: './assets/hikaru.jpeg',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?',
     description:
@@ -78,8 +78,8 @@ const speakers = [
   },
   {
     key: 5,
-    speakerName: 'Ryan Merkley',
-    speakerImg: './assets/merkley.png',
+    speakerName: 'Anish Giri',
+    speakerImg: './assets/anish.jpeg',
     title:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore?',
     description:
